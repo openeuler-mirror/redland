@@ -17,20 +17,20 @@ support for the Resource Description Framework (RDF).
 
 %package         devel
 Summary:         Libraries when using redland to do some developments
-Provides:        %{name}%{?_isa} = %{version}-%{release}
-Obsoletes        %{name}%{?_isa} = %{version}-%{release}
+Provides:        %{name}-static = %{version}-%{release}
+Obsoletes        %{name}-static = %{version}-%{release}
 %description     devel
 Libs when developing with Redland.
 
 %package         mysql
 Summary:         Redland MySQL storage
-Requires:        %{name}%{?_isa} = %{version}-%{release}
+Requires:        %{name}-static = %{version}-%{release}
 %description     mysql
 Provides mysql as storage for in Redland
 
 %package         pgsql
 Summary:         Redland PostgreSQL storage 
-Requires:        %{name}%{?_isa} = %{version}-%{release}
+Requires:        %{name}-static = %{version}-%{release}
 %description     pgsql
 Provides PostgreSQL as storage for in Redland
 
