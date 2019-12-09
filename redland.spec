@@ -60,10 +60,17 @@ CFLAGS="$RPM_OPT_FLAGS -fno-strict-aliasing" CXXFLAGS="$RPM_OPT_FLAGS -fno-stric
 make check
 
 
-%ldconfig_scriptlets 
-%ldconfig_scriptlets libs
-%ldconfig_scriptlets mysql
-%ldconfig_scriptlets pgsql 
+%post -p /sbin/ldconfig
+%postun -p /sbin/ldconfig
+
+%post -p /sbin/ldconfig libs
+%postun -p /sbin/ldconfig libs
+
+%post -p /sbin/ldconfig mysql 
+%postun -p /sbin/ldconfig mysql 
+
+%post -p /sbin/ldconfig pgsql
+%postun -p /sbin/ldconfig pgsql 
 
 %files
 %doc AUTHORS NEWS README NOTICE TODO
