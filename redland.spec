@@ -17,7 +17,8 @@ support for the Resource Description Framework (RDF).
 
 %package         devel
 Summary:         Libraries when using redland to do some developments
-Requires:        %{name}%{?_isa} = %{version}-%{release}
+Provides:        %{name}%{?_isa} = %{version}-%{release}
+Obsoletes        %{name}%{?_isa} = %{version}-%{release}
 %description     devel
 Libs when developing with Redland.
 
