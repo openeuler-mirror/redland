@@ -18,7 +18,7 @@ support for the Resource Description Framework (RDF).
 %package         devel
 Summary:         Libraries when using redland to do some developments
 Provides:        %{name}-static = %{version}-%{release}
-Obsoletes        %{name}-static = %{version}-%{release}
+Obsoletes:       %{name}-static = %{version}-%{release}
 %description     devel
 Libs when developing with Redland.
 
@@ -63,8 +63,8 @@ make check
 %post -p /sbin/ldconfig
 %postun -p /sbin/ldconfig
 
-%post -p /sbin/ldconfig libs
-%postun -p /sbin/ldconfig libs
+%post -p /sbin/ldconfig devel 
+%postun -p /sbin/ldconfig devel 
 
 %post -p /sbin/ldconfig mysql 
 %postun -p /sbin/ldconfig mysql 
