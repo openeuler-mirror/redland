@@ -6,7 +6,7 @@ License:        LGPLv2+ or ASL 2.0
 URL:            http://librdf.org/
 Source0:        http://download.librdf.org/source/%{name}-%{version}.tar.gz
 
-BuildRequires:  curl-devel gcc-c++ libdb-devel libtool-ltdl-devel libxml2-devel >= 2.4.0 mysql-devel
+BuildRequires:  libcurl-devel gcc-c++ libdb-devel libtool-ltdl-devel libxml2-devel >= 2.4.0 mysql-devel
 BuildRequires:  perl-interpreter postgresql-devel raptor2-devel rasqal-devel >= 0.9.26 sqlite-devel
 
 Obsoletes: redland-virtuoso < 1.0.17-8
